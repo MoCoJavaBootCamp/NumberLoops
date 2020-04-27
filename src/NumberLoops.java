@@ -19,8 +19,8 @@ public class NumberLoops {
                     "6 - Print sum of all values 1-10\n" +
                     "7 - Print sum of all values from your selection to 1\n" +
                     "8 - Print a rectangle\n" +
-                    "9 - Print a right facing triangle\n" +
-                    "10 - Print a left facing triangle\n" +
+                    "9 - Print a left facing triangle\n" +
+                    "10 - Print a right facing triangle\n" +
                     "11 - Print the factorial of a number\n");
 
             num = input.nextInt();
@@ -135,7 +135,7 @@ public class NumberLoops {
         for (int i = 1; i < 11; i += 1) {
             // find empty space, replace it with no space
             // add start at end after
-            star.replaceFirst(" ", "");
+            star = star.replaceFirst(" ", "");
             star += "*";
             System.out.println(star);
         }

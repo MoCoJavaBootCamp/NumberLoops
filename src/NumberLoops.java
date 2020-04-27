@@ -131,17 +131,20 @@ public class NumberLoops {
     }
 
     public static void printLeftTri() {
-        String star = "*";
-        for (int i = 0; i < 5; i += 1) {
+        String star = "           ";
+        for (int i = 1; i < 11; i += 1) {
+            // find empty space, replace it with no space
+            // add start at end after
+            star.replaceFirst(" ", "");
+            star += "*";
             System.out.println(star);
-            star = star.concat("*");
         }
     }
 
     public static void printRightTri() {
-        String star = "        *";
-        for (int i = 1; i < 11; i += 1) {
-            star = star.replace(" ", "*");
+        String star = "";
+        for (int i = 0; i < 5; i += 1) {
+            star = star.concat("*");
             System.out.println(star);
         }
     }
@@ -158,4 +161,3 @@ public class NumberLoops {
         System.out.println(product);
     }
 }
-
